@@ -7,7 +7,7 @@ require 'src/Exception.php';
 require 'src/PHPMailer.php';
 require 'src/SMTP.php';
 
-$recaptchaSecret = "6LcFLuIqAAAAAB8TN8gze-vI8zCqfNdaFM3eV204";
+$recaptchaSecret = "SUPER_SECRET";
 
 if (isset($_POST["send"])) {
 
