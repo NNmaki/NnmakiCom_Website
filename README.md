@@ -10,6 +10,7 @@ Check it out: [https://nnmaki.com/scoreboard/](https://nnmaki.com/)
 
 ![nnmakicom_1000x670_1](https://github.com/user-attachments/assets/69d279ea-9430-4b5a-8ccb-1f6d2c981010)
 
+![nnmakicom_1000x670_3](https://github.com/user-attachments/assets/21cec2d0-21bc-4a41-a9ca-60504901a125)
 
 --
 ## Project
@@ -20,4 +21,4 @@ For the burger menu, which opens from the sidebar, and the image carousels on th
 
 I believe I could have completed this much more easily using WordPress, but coding it from scratch gave me a lot of freedom in design without relying on third-party plugins.
 
-![nnmakicom_1000x670_3](https://github.com/user-attachments/assets/21cec2d0-21bc-4a41-a9ca-60504901a125)
+
