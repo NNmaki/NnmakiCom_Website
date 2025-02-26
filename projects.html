@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta property="og:title" content="nnmaki.com" />
+<meta property="og:image" content="https://nnmaki.com/images/nnmakicom_og_1200x630.png">
+<meta property="og:type" content="Portfolio Website" />
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:description" content="Niko Niittymäki - Web-developer | HTML | CSS | Javascript | PHP">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="icon" href="images/favico.ico" type="image/x-icon">
+<title>nnmaki.com</title>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <header class="sticky-header">
+        <div class="header-logo">
+            <a href="index.html"><img src="images/nnlogo.png" title="Bact to main page" alt="Back to main page"></a>
+        </div>
+        <div class="burger-menu" onclick="toggleMenu()" role="button" aria-expanded="false" aria-label="Open menu">
+        ☰
+        </div>    
+    </header>
+
+    <nav class="sidebar" id="sidebar" aria-label="Main Navigation">
+        <button class="close-btn" onclick="toggleMenu()" tabindex="0">×</button>
+        <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="profile.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="background-indiv-pro background3-indiv-pro">    
+        <div class="indiv-pro-header" id="projects-top">
+            <div><h1>My projects</h1></div>
+            <div><h5>Practice projects & Exercises</h5></div>
+        </div>
+        
+        <!-------------------- Project section -------------------->
+        <div class="content-overlay-indiv-pro" id="login-system">
+            <div class="carousel">        
+                <div class="carousel-images">
+                <img src="images/login_system_1000x670_1.png" class="active">
+                <img src="images/login_system_1000x670_2.png">
+                <img src="images/login_system_1000x670_3.png">
+                <img src="images/login_system_1000x670_4.png">
+                <img src="images/login_system_1000x670_5.png">
+                <img src="images/login_system_1000x670_6.png">
+                <img src="images/login_system_1000x670_7.png">
+                <img src="images/login_system_1000x670_8.png">
+                <img src="images/login_system_1000x670_9.png">
+                <img src="images/login_system_1000x670_10.png">
+                </div>
+                <button class="carousel-button prevBtn">❮</button>
+                <button class="carousel-button nextBtn">❯</button>
+            </div>
+            <div class="indiv-project-divider">
+            </div>
+            <div class="tech-icons-pro">
+                <div class="tech-icon-content-pro" id="proj-date"><p>6.2.2025</p>
+                </div>
+                <div class="tech-icon-content-pro"><i class="devicon-php-plain colored" title="PHP" alt="PHP"></i>
+                <p>PHP</p></div>
+                <div class="tech-icon-content-pro"><i class="devicon-azuresqldatabase-plain colored" title="SQL" alt="SQL"></i>
+                <p>SQL</p></div>
+                <div class="tech-icon-content-pro"><i class="devicon-vscode-plain colored" title="VS Code" alt="VS Code"></i>
+                <p>VSCode</p></div>
+                <div class="tech-icon-content-pro"><i class="devicon-html5-plain colored" title="HTML" alt="HTML"></i>
+                <p>HTML</p></div>
+                <div class="tech-icon-content-pro"><i class="devicon-css3-plain-wordmark colored" title="CSS" alt="CSS"></i>
+                <p>CSS</p></div>
+                <div class="tech-icon-content-pro"><i class="devicon-javascript-plain colored" title="JavaScript" alt="JavaScript"></i>
+                <p>JavaScript</p></div>         
+            </div>
+            <div class="indiv-project-divider">
+            </div>
+            <div class="indiv-project-textcontent">
+                <h4>Ticketing and Login System - My First PHP Web App</h4>
+                <p>The goal of this practice project was to explore various PHP functionalities and utilize an SQL database in such a way that data could be directly saved, retrieved, and modified from a web form. The project was built entirely from scratch with PHP, HTML and SQL. This was also one of my biggest projects so far.</p>
+                <p>As an example, I adapted the site into a fault report/ticketing system for a property management company. In this system, a resident can report an issue in their apartment. The report is stored in the database and can be retrieved as a list, which is displayed on the site as separate cards.</p>
+                <h6>Implementing</h6>
+                <p>Additionally, I implemented a login system using PHP. The site includes a registration form where users can sign up by providing a username, password, and email address. The system stores this information in the database. After registering, users can log in with their credentials. The login process uses PHPs built-in password hashing function password_hash(), ensuring that passwords are securely encrypted while stored in the database. During login, the system verifies the user-provided password against the hashed password in the database. If the credentials match, a unique session ID is created and stored in the user's browser, enabling authentication.</p>
+                <p>The ticketing system and the login system are independent features, but I integrated them into this practice project. Unlike a real-world implementation, the logged tickets can be freely viewed by anyone. Finally, I created a bilingual version of the site. I built separate files for each language, from which the PHP script retrieves the necessary translations using a key-value approach. This required significant effort but allows content changes to be made in a single file, keeping different language versions easy to manage.</p>
+                <h6>Tech talk</h6>
+                <p>During the project, I also practiced using PHPs MVC architecture, which separates functionalities into different files. This makes updating and debugging the system more efficient. Additionally, I implemented error-handling functions in the login system, ensuring that required fields are filled out, email addresses have the correct format, and that the username or email is not already in use. Based on these checks, the user receives clear error messages.</p>
+                <p>All form inputs are sanitized using PHPs htmlspecialchars() function, which converts the input data into a safe format. SQL queries utilize prepared statements, ensuring that user input is treated strictly as data before being stored in the database, preventing SQL injection attacks.</p>
+                <p>See Live version or whole project from Github via buttons down below</p>
+                <a href="https://nnmaki.com/housingmanagementintranet/" target="_blank"><button class="button-a">Live Version</button></a>  
+                <a href="https://github.com/NNmaki/HousingManagementIntranet" target="_blank"><button class="button-a">Github Repo</button></a>   
+            </div>
+        </div>
+
+            <!-------------------- Project section -------------------->
+            <div class="content-overlay-indiv-pro" id="login-system">
+                <div class="carousel">        
+                    <div class="carousel-images">
+                    <img src="images/nnmakicom_1000x670_1.png" class="active">
+                    <img src="images/nnmakicom_1000x670_2.png">
+                    <img src="images/nnmakicom_1000x670_3.png">
+                    <img src="images/nnmakicom_1000x670_4.png">
+                    <img src="images/nnmakicom_1000x670_5.png">
+                    </div>
+                    <button class="carousel-button prevBtn">❮</button>
+                    <button class="carousel-button nextBtn">❯</button>
+                </div>
+                <div class="indiv-project-divider">
+                </div>
+                <div class="tech-icons-pro">
+                    <div class="tech-icon-content-pro" id="proj-date"><p>5.2.2025</p>
+                    </div>
+                    <div class="tech-icon-content-pro"><i class="devicon-html5-plain colored" title="HTML" alt="HTML"></i>
+                    <p>HTML</p></div>
+                    <div class="tech-icon-content-pro"><i class="devicon-css3-plain-wordmark colored" title="CSS" alt="CSS"></i>
+                    <p>CSS</p></div>
+                    <div class="tech-icon-content-pro"><i class="devicon-php-plain colored" title="PHP" alt="PHP"></i>
+                    <p>PHP</p></div>
+                    <div class="tech-icon-content-pro"><i class="devicon-javascript-plain colored" title="JavaScript" alt="JavaScript"></i>
+                    <p>JavaScript</p></div>         
+                    <div class="tech-icon-content-pro"><i class="devicon-gimp-plain" title="Gimp" alt="Gimp"></i>
+                    <p>Gimp</p></div>
+                </div>
+                <div class="indiv-project-divider">
+                </div>
+                <div class="indiv-project-textcontent">
+                    <h4>NNmaki.com - This Website</h4>
+                    <p>At first, my purpose was to create a portfolio site using a CMS content management system like WordPress. However, after considering it, I decided to build it using pure HTML and CSS combined with some functions written in PHP. </p>
+                    
+                    <h6>Goals</h6>
+                    <p>My goal was to create a landing page with three static background sections which would switch seamlessly when scrolling, which was perhaps the most challenging part to implement. Another difficulty was making the website as scalable as possible. I tested it on different resolutions, from widescreen to mobile.
+                    Additionally, I aimed to include some small CSS effects and animations, at least in the full-screen view. The hover effect was already familiar to me and adds a lot of "liveliness," but I also tested a so-called typing text animation using the @keyframes CSS-rule. To improve scalability, I used relative size units for elements and images. In some cases, I also utilized CSS @media-queries and made adjustments for three different screen resolutions.</p>
+                    <h6>Project</h6>
+                    <p>I implemented the contact form using PHP with the PHPMailer-library. PHPMailer supports sending emails via SMTP and includes good error-handling functions. The configuration file stores login credentials for the SMTP server, and the script sends the form data in a predefined format to a specified email address. Added also reCaptcha from Google to prevent flooding.</p>
+                    <p>For the burger menu, which opens from the sidebar, and the image carousels on the project pages, I used JavaScript.</p>
+                    <p>I believe I could have completed this much more easily using WordPress, but coding it from scratch gave me a lot of freedom in design without relying on third-party plugins.</p>
+                    <p>See Github repo via button</p>
+                    <a href="https://github.com/NNmaki/HousingManagementIntranet" target="_blank"><button class="button-a">Github Repo</button></a>   
+                </div>
+            </div>
+
+        <!-------------------- Project section -------------------->
+        <div class="content-overlay-indiv-pro" id="chrome-extension">
+            <div class="carousel">        
+                <div class="carousel-images">
+                <img src="images/chrome_ext_746x500_1.png" class="active">
+                <img src="images/chrome_ext_746x500_2.png">
+                <img src="images/chrome_ext_746x500_3.png">
+                </div>
+                <button class="carousel-button prevBtn">❮</button>
+                <button class="carousel-button nextBtn">❯</button>
+            </div>
+            <div class="indiv-project-divider">
+            </div>
+            <div class="tech-icons-pro">
+                <div class="tech-icon-content-pro" id="proj-date"><p>22.1.2025</p>
+                </div>
+                <div class="tech-icon-content-pro"><i class="devicon-html5-plain colored" title="HTML" alt="HTML"></i>
+                <p>HTML</p></div>
+                <div class="tech-icon-content-pro"><i class="devicon-css3-plain-wordmark colored" title="CSS" alt="CSS"></i>
+                <p>CSS</p></div>
+                <div class="tech-icon-content-pro"><i class="devicon-javascript-plain colored" title="JavaScript" alt="JavaScript"></i>
+                <p>JavaScript</p></div>         
+                </div>
+                <div class="indiv-project-divider">
+                </div>
+                <div class="indiv-project-textcontent">
+                <h4>Lead Tracker - Chrome Extension</h4>
+                <p>An exercise where I practiced using the Chrome browsers API interface and the browser's local storage method together with JavaScript. This practice is also from Scrimba Fronend Developer course.</p>
+                <p>A simple Chrome extension that works somewhat like a bookmarks-feature. The extension allows you to save URLs either from an open tab or by manually entering it into an input field. The saved URLs are stored in the browsers cache and can be accessed with a single mouse click from the toolbar.</p>
+                <p>To install the Chrome extension, you need to add a manifest.json file to the installation files, including the necessary content and parameters. This extension was created for saving marketing leads, but it can be used for other purposes as well.</p>
+                <p>Below is a link to the GitHub repository where you can download the extension I created. After downloading the extension, you can install it in Chrome by extracting the downloaded zip-file, selecting "Manage Extensions" in the Chrome browser, clicking "Load Unpacked," and then accessing Lead Tracker from the Extensions button located to the right of the address bar.</p>
+                <a href="https://github.com/NNmaki/LeadtrackerChromeExtension" target="_blank"><button class="button-a">Github Repo</button></a>   
+            </div>
+        </div>
+
+        <!-------------------- Project section -------------------->
+        <div class="content-overlay-indiv-pro" id="password-generator">
+        <div class="carousel">        
+        <div class="carousel-images">
+        <img src="images/pwd_gen_746x500_1.png" class="active">
+        <img src="images/pwd_gen_746x500_2.png">
+        </div>
+        <button class="carousel-button prevBtn">❮</button>
+        <button class="carousel-button nextBtn">❯</button>
+        </div>
+        <div class="indiv-project-divider">
+        </div>
+        <div class="tech-icons-pro">
+        <div class="tech-icon-content-pro" id="proj-date"><p>12.1.2025</p>
+        </div>
+        <div class="tech-icon-content-pro"><i class="devicon-html5-plain colored" title="HTML" alt="HTML"></i>
+        <p>HTML</p></div>
+        <div class="tech-icon-content-pro"><i class="devicon-css3-plain-wordmark colored" title="CSS" alt="CSS"></i>
+        <p>CSS</p></div>
+        <div class="tech-icon-content-pro"><i class="devicon-javascript-plain colored" title="JavaScript" alt="JavaScript"></i>
+        <p>JavaScript</p></div>         
+        </div>
+        <div class="indiv-project-divider">
+        </div>
+        <div class="indiv-project-textcontent">
+        <h4>Password Generator - Scrimba Course exercise</h4>
+        <p>A password generator exercise that creates strong, random passwords. The application employs JavaScript's Math.random() method to generate passwords of varying lengths (5, 10, or 15 characters) using a combination of letters and special characters. Users can instantly copy the generated password to their clipboard by clicking a button, which uses the JavaScript function navigator.clipboard.writeText().</p>
+        <p>From the buttons below, you can check Github repo of this exercise, and check online how it works.</p>
+        <a href="https://nnmaki.com/passwordgenerator/" target="_blank"><button class="button-a">Try Online</button></a>   
+        <a href="https://github.com/NNmaki/PasswordGenerator" target="_blank"><button class="button-a">Github Repo</button></a>   
+        </div>
+        </div>
+
+        <!-------------------- Project section -------------------->
+        <div class="content-overlay-indiv-pro" id="blackjack-game">
+        <div class="carousel">        
+        <div class="carousel-images">
+        <img src="images/blackjack_game_1000x1670_1.png" class="active">
+        <img src="images/blackjack_game_1000x1670_2.png">
+        <img src="images/blackjack_game_1000x1670_3.png">
+        </div>
+        <button class="carousel-button prevBtn">❮</button>
+        <button class="carousel-button nextBtn">❯</button>
+        </div>
+        <div class="indiv-project-divider">
+        </div>
+        <div class="tech-icons-pro">
+        <div class="tech-icon-content-pro" id="proj-date"><p>9.1.2025</p>
+        </div>
+        <div class="tech-icon-content-pro"><i class="devicon-html5-plain colored" title="HTML" alt="HTML"></i>
+        <p>HTML</p></div>
+        <div class="tech-icon-content-pro"><i class="devicon-css3-plain-wordmark colored" title="CSS" alt="CSS"></i>
+        <p>CSS</p></div>
+        <div class="tech-icon-content-pro"><i class="devicon-javascript-plain colored" title="JavaScript" alt="JavaScript"></i>
+        <p>JavaScript</p></div>         
+        </div>
+        <div class="indiv-project-divider">
+        </div>
+        <div class="indiv-project-textcontent">
+        <h4>Blackjack Game - JavaScript Exercise</h4>
+        <p>Just another simple excercise with javascript from Scrimba Front End Developer -course. Uses Math.random() -static method to draw random cards from the deck and keep tracking when exceeding 21. Applies scores so the ace is 11 and jack, queen and king counts as 10. Number cards have their face value.</p>
+        <p>From the buttons below, you can check Github repo of this exercise, and also try it out on live version.</p>
+        <a href="https://nnmaki.com/blackjack/" target="_blank"><button class="button-a">Try Online</button></a>   
+        <a href="https://github.com/NNmaki/BlackJackGameScrimba" target="_blank"><button class="button-a">Github Repo</button></a>   
+        </div>
+        </div>
+
+        <!-------------------- Project section -------------------->
+        <div class="content-overlay-indiv-pro" id="basketball-scoreboard">
+        <div class="carousel">        
+        <div class="carousel-images">
+        <img src="images/basketball_score_1000x670_1.png" class="active">
+        <img src="images/basketball_score_1000x670_2.png">
+        </div>
+        <button class="carousel-button prevBtn">❮</button>
+        <button class="carousel-button nextBtn">❯</button>
+        </div>
+        <div class="indiv-project-divider">
+        </div>
+        <div class="tech-icons-pro">
+        <div class="tech-icon-content-pro" id="proj-date"><p>3.1.2025</p>
+        </div>
+        <div class="tech-icon-content-pro"><i class="devicon-html5-plain colored" title="HTML" alt="HTML"></i>
+        <p>HTML</p></div>
+        <div class="tech-icon-content-pro"><i class="devicon-css3-plain-wordmark colored" title="CSS" alt="CSS"></i>
+        <p>CSS</p></div>
+        <div class="tech-icon-content-pro"><i class="devicon-javascript-plain colored" title="JavaScript" alt="JavaScript"></i>
+        <p>JavaScript</p></div>         
+        </div>
+        <div class="indiv-project-divider">
+        </div>
+        <div class="indiv-project-textcontent">
+        <h4>Basketball Scoreboard - JavaScript Exercise</h4>
+        <p>This small project is part of the Scrimba Front End Developer Path. This JavaScript application keeps track of the scores in a basketball game based on user inputs. User can add 1, 2, or 3 points to either the home or guest side.</p>
+        <p>Ive also added some "extra features," such as a timer for periods, a highlighted leading team, and some popup windows.</p>
+        <p>From the buttons below, you can check Github repo of this excersize, and also try it out on live version.</p>
+        <a href="https://nnmaki.com/scoreboard/" target="_blank"><button class="button-a">Try Online</button></a>   
+        <a href="https://github.com/NNmaki/BasketballScoreboard" target="_blank"><button class="button-a">Github Repo</button></a>   
+        </div>
+        </div>
+
+        <!-------------------- Project section -------------------->
+        <div class="content-overlay-indiv-pro" id="crispybites-store">
+        <div class="carousel">        
+        <div class="carousel-images">
+        <img src="images/crispywp_1000x670_1.png" class="active">
+        <img src="images/crispywp_1000x670_2.png">
+        <img src="images/crispywp_1000x670_3.png">
+        <img src="images/crispywp_1000x670_4.png">
+        <img src="images/crispywp_1000x670_5.png">
+        </div>
+        <button class="carousel-button prevBtn">❮</button>
+        <button class="carousel-button nextBtn">❯</button>
+        </div>
+        <div class="indiv-project-divider">
+        </div>
+        <div class="tech-icons-pro">
+        <div class="tech-icon-content-pro" id="proj-date"><p>12.12.2024</p>
+        </div>
+        <div class="tech-icon-content-pro"><i class="devicon-wordpress-plain" title="WordPress" alt="WordPress"></i>
+        <p>WordPress</p></div>
+        <div class="tech-icon-content-pro"><i class="devicon-woocommerce-plain colored" title="WooCommerce" alt="WooCommerce"></i>
+        <p>WooCommerce</p></div>
+        <div class="tech-icon-content-pro"><i class="devicon-azuresqldatabase-plain colored" title="SQL" alt="SQL"></i>
+        <p>SQL</p></div> 
+        <div class="tech-icon-content-pro"><i class="devicon-php-plain colored" title="PHP" alt="PHP"></i>
+        <p>PHP</p></div>
+        <div class="tech-icon-content-pro"><i class="devicon-gimp-plain" title="Gimp" alt="Gimp"></i>
+        <p>Gimp</p></div>
+        </div>
+        <div class="indiv-project-divider">
+        </div>
+        <div class="indiv-project-textcontent">
+        <h4>Nico's Crispy Bites - Woocommerce Store</h4>
+        <p>Web and frontend development has felt like a good fit for me, and I also have previous experience with online stores, so I took a closer look at the WordPress platform. I did a test project where I used the same ready-made material as in the Taitotalo demo work in the spring. This is how the online store for a fast food restaurant was created.</p>
+        <h6>Project Implementation</h6>
+        <p>In the project, I followed as closely as possible the specifications and details that need to be taken into account if a similar project were to be carried out in a real environment. The online store has been installed with, among other things, payment and delivery method modules and a plugin containing cookie policies. I also gained experience in updating products via an Excel spreadsheet, downloadable products, discount campaigns, and custom CSS definitions. In addition, in connection with security issues and database handling, it was also necessary to delve into the PHP programming language, on which the entire WordPress environment rests.</p>
+        <h6>Plugins Used in the Project and Their Purposes</h6>
+        <p><ul>
+        <li>Woocommerce - WordPress online store plugin</li>
+        <li>Advanced Dynamic Pricing for WooCommerce - Discount campaigns such as BOGOF (Buy One, Get One For Free)</li>
+        <li>Banner Management For WooCommerce - Banner carousels</li>
+        <li>Cookie Notice & Compliance for GDPR - Cookie policies</li>
+        <li>All In One WP Migration - Migration from the development environment to the web server.</li>
+        <li>Essential Blocks - Styling blocks and product sliders</li>
+        <li>lks Menu - Customizing menus for WooCommerce</li>
+        <li>Loco Translate - Translation of the core, plugins, and theme.</li>
+        <li>Popup Maker - Pop-up windows</li>
+        <li>WowStore - Product grids and product comparisons</li>
+        <li>WPForms Lite - Creating & handling forms</li>
+        <li>Advanced Woo Search - Visualizing the search function</li>
+        <li>Solid Security Basic - Security & optimization</li>
+        <li>Rank Math SEO - Optimizing metadata & search engine optimization</li>
+        </ul>
+        </p>
+        <h6>Results</h6>
+        <p>When publishing this project, I first tried various free hosting providers with little or no success before deciding to pay for slightly higher quality hosting. In addition to speed, I got a bunch of other useful features, such as 300 databases and ssh access to the server.</p>
+        <p>A fun and educational project that I hope will be useful in the future.</p>
+        <a href="https://nnmaki.com/crispybites/" target="_blank"><button class="button-a">Try Online</button></a>   
+        </div>
+        </div>
+
+        <!-------------------- Project section -------------------->
+        <div class="content-overlay-indiv-pro" id="scrimba-course">
+        <div class="carousel">        
+        <div class="carousel-images">
+        <img src="images/scrimbacourse_1000x670_1.png" class="active">
+        <img src="images/scrimbacourse_1000x670_2.png">
+        </div>
+        <button class="carousel-button prevBtn">❮</button>
+        <button class="carousel-button nextBtn">❯</button>
+        </div>
+        <div class="indiv-project-divider">
+        </div>
+        <div class="tech-icons-pro">
+        <div class="tech-icon-content-pro" id="proj-date"><p>30.11.2024</p>
+        </div>
+        <div class="tech-icon-content-pro"><i class="devicon-html5-plain colored" title="HTML" alt="HTML"></i>
+        <p>HTML</p></div>
+        <div class="tech-icon-content-pro"><i class="devicon-css3-plain-wordmark colored" title="CSS" alt="CSS"></i>
+        <p>CSS</p></div>
+        <div class="tech-icon-content-pro"><i class="devicon-javascript-plain colored" title="JavaScript" alt="JavaScript"></i>
+        <p>JavaScript</p></div>
+        <div class="tech-icon-content-pro"><i class="devicon-react-original colored" title="React" alt="React"></i>
+        <p>React</p></div>        
+        </div>
+        <div class="indiv-project-divider">
+        </div>
+        <div class="indiv-project-textcontent">
+        <h4>Frontend Developer Career path - Scrimba Course</h4>
+        <p>I have started to improve my front end developing skills on Scrimba platform. This Front End Developer Career Path -course aims to teach participiants into a job-ready frontent developer in less than six months. Course includes hundreds of interactive coding challenges with several independently made portfolio projects</p>
+        <p>The course follows the Mozilla Developer Network curriculum and includes over 80 hours of teaching material, in addition to exercises and projects. The modules and subject areas included in the course include, among others, Web development HTML and CSS, interactive content with JavaScript, Chrome extensions, Mobile apps, Responsiveness and accessibility, API interface and Rest, Async and React.</p>
+        <p>From the button below, you can view the Github repository where I save the assignments made during the course, and for the larger independently made projects, I save the content in separate repositories. More info about Scrimba Frontend Developer Career Path course can be found on <a href="https://scrimba.com/frontend-path-c0j">https://scrimba.com/frontend-path-c0j</a></p>
+        <a href="https://github.com/NNmaki/scrimbacourse" target="_blank"><button class="button-a">Github Repo</button></a>   
+        </div>
+        </div>
+        <div class="content-overlay-indiv-pro" id="biscuithunt-game">
+        <div class="carousel">        
+        <div class="carousel-images">
+        <img src="images/biscuithunt_1000x560_1.png" class="active">
+        <img src="images/biscuithunt_1000x560_2.png">
+        <img src="images/biscuithunt_1000x560_3.png">
+        <img src="images/biscuithunt_1000x560_4.png">
+        <img src="images/biscuithunt_1000x560_5.png">
+        <img src="images/biscuithunt_1000x560_6.png">
+        <img src="images/biscuithunt_1000x560_7.png">
+        <img src="images/biscuithunt_1000x560_8.png">
+        </div>
+        <button class="carousel-button prevBtn">❮</button>
+        <button class="carousel-button nextBtn">❯</button>
+        </div>
+        <div class="indiv-project-divider">
+        </div>    
+        <div class="tech-icons-pro">
+        <div class="tech-icon-content-pro" id="proj-date"><p>20.9.2024</p>
+        </div>
+        <div class="tech-icon-content-pro"><p>Platform & Languages:</p>
+        </div>
+        <div class="tech-icon-content-pro"><i class="devicon-python-plain colored" title="Python" alt="Python"></i>
+        <p>Python</p></div>
+        <div class="tech-icon-content-pro"><i class="devicon-javascript-plain colored" title="JavaScript" alt="JavaScript"></i>
+        <p>JavaScript</p></div>
+        </div>
+        <div class="indiv-project-divider">
+        </div>
+        <div class="indiv-project-textcontent">
+        <h4>Bablos Biscuit Hunt! -The game</h4>
+        <h6>Story in the back</h6>
+        <p>We have a beloved dog named Bablo. Bablo is a Labrador Retriever, and he loves biscuits like other labs do. That inspired me to create a simple game in Python, which was an ideal project for learnin Python. The idea is simple: just guide Bablo to collect as many biscuits as you can. If you catch a biscuit, you get one point, and if you miss one, you lose one life. Note that enen though Bablo loves delicacies, he wont eat just anything. You lose points if you collect something that Bablo doesn'n like. If you collect a carrot, you lose 1 point, and if you collect an olive, you lose 2 points because he hates olives. And it's been said that there are also some poisoned sausages aroung. If you accidentally collect a poisoned sausage, the game will end immediately.</p>
+        <h6>Game Deloping</h6>
+        <p>The game was initially developed using the PyGame Zero -library, which is a beginner-friendly way to get into game development with Python. This was made possible by some easy-to-use features and by running the program without a traditional game loop. However, at some point, the limitations of PyGame Zero became apparent, so the game switched to using the actual PyGame library, which is a very popular game development module.</p>
+        <p> I originally published the game made with Python. To gain experience in web development and JavaScript programming, I have now also made the game in JavaScript so it can be run in a web browser. I've also implement the .exe files compiled with the PyInstaller module so the game will also work in standalone version.</p>
+        <h6>Conclusion</h6>
+        <p>Developing the game was fun, and it provided additional practical experience in programming. One challenge was ensuring the game ran at the same speed on all devices. Even though I locked the screen refresh rate to use the same FPS value every time the code is executed, the speed can still vary slightly, especially in virtual environments.</p>
+        <p>In the future, the plan is to develop the game further by adding different difficulty levels, which will affect the falling speed of objects and objects spawning interval. Additionally, I will explore the possibility of saving high scores to an SQLite database.</p>
+        <a href="https://nnmaki.com/biscuithunt/" target="_blank"><button class="button-a">Play Online</button></a>  
+        <a href="https://github.com/NNmaki/Bablos_Biscuit_Hunt" target="_blank"><button class="button-a">Github (Python)</button></a>  
+        <a href="https://github.com/NNmaki/Bablos_Biscuit_Hunt_js" target="_blank"><button class="button-a">Github (JavaScript)</button></a> 
+        </div>
+        </div>
+
+        <!-------------------- Project section -------------------->
+        <div class="content-overlay-indiv-pro" id="figma-python">
+        <div class="carousel">        
+        <div class="carousel-images">
+        <img src="images/figmapython_1000x560_1.png" class="active">
+        <img src="images/figmapython_1000x560_2.png">
+        <img src="images/figmapython_1000x560_3.png">
+        <img src="images/figmapython_1000x560_4.png">
+        <img src="images/figmapython_1000x560_5.png">
+        <img src="images/figmapython_1000x560_6.png">
+        </div>
+        <button class="carousel-button prevBtn">❮</button>
+        <button class="carousel-button nextBtn">❯</button>
+        </div>
+        <div class="indiv-project-divider">
+        </div>    
+        <div class="tech-icons-pro">
+        <div class="tech-icon-content-pro" id="proj-date"><p>13.8.2024</p>
+        </div>
+        <div class="tech-icon-content-pro"><p>Platform & Languages:</p>
+        </div>
+        <div class="tech-icon-content-pro"><i class="devicon-python-plain colored" title="Python" alt="Python"></i>
+        <p>Python</p></div>
+        <div class="tech-icon-content-pro"><i class="devicon-figma-plain colored" title="Figma" alt="Figma"></i>
+        <p>Figma</p></div>
+        </div>
+        <div class="indiv-project-divider">
+        </div>
+        <div class="indiv-project-textcontent">
+        <h4>Figma GUI to Python code</h4>
+        <h6>Description</h6>
+        <p>This is an exercise converting a UI framework created in Figma into Python code, with an added feature for saving entered data directly to an Excel-sheet.</p>
+        <p>This is made possible by the Tkinter Designer tool (Copyright (c) 2021, Parth Jadhav), which as the name suggests, uses Python’s Tkinter library -the most commonly used library for creating UI-applications in Python.</p>
+        <p>As an experiment, I created a small form-like UI in Figma, which I then converted to Python code. I also added the Openpyxl library into the converted code, allowing the user’s form entries to be saved directly to an Excel sheet. Or creating it if it doesn't excist.</p>
+        <h6>My Thoughts</h6>
+        <p>Although similar results can certainly be achieved more easily with ready-made tools, this exercise demonstrates that comparable functionality can be accomplished locally without additional cloud services or coding the entire application from scratch. However, enabling Excel-saving required quite a bit of code modification.</p>
+        <a href="https://www.youtube.com/watch?v=JI59PPkxAeQ" target="_blank"><button class="button-a">See Video</button></a>  
+        <a href="https://github.com/NNmaki/FigmaPythonGUI" target="_blank"><button class="button-a">Github Repo</button></a>  
+        </div>
+        </div>
+
+        <!-------------------- Project section -------------------->
+        <div class="content-overlay-indiv-pro" id="crispybites-powerplatform">
+        <div class="carousel">        
+        <div class="carousel-images">
+        <img src="images/crispybites_1000x670_1.jpg" class="active">
+        <img src="images/crispybites_1000x670_2.jpg">
+        <img src="images/crispybites_1000x670_3.jpg">
+        <img src="images/crispybites_1000x670_4.jpg">
+        <img src="images/crispybites_1000x670_5.jpg">
+        <img src="images/crispybites_1000x670_6.jpg">
+        <img src="images/crispybites_1000x670_7.jpg">
+        <img src="images/crispybites_1000x670_8.jpg">
+        <img src="images/crispybites_1000x670_9.jpg">
+        <img src="images/crispybites_1000x670_10.jpg">
+        <img src="images/crispybites_1000x670_11.jpg">   
+        </div>
+        <button class="carousel-button prevBtn">❮</button>
+        <button class="carousel-button nextBtn">❯</button>
+        </div>
+        <div class="indiv-project-divider">
+        </div>
+        <div class="tech-icons-pro">
+        <div class="tech-icon-content-pro" id="proj-date"><p>20.4.2024</p>
+        </div>
+        <div class="tech-icon-content-pro"><p>Platform & Languages:</p>
+        </div>
+        <div class="tech-icon-content-pro"><i class="devicon-windows11-original colored" title="Microsoft Power Platform" alt="Microsoft Power Platform"></i>
+        <p>Microsoft Power Platform</p></div>
+        </div>
+        <div class="indiv-project-divider">
+        </div>
+        <div class="indiv-project-textcontent">
+        <h4>Restaurant Ordering System - Power Platform</h4>
+        <p>This practice project was an application that I made as a demonstration work for the Taitotalo Low-Code System Developer training program. The project involved implementing a restaurant ordering system for a fictional fast-food restaurant. The purpose of the project was to create a system that serves as a channel between customers and the restaurant staff. The goal was to simulate a system as realistically as possible, ensuring it could be used in a real-world environment.</p>
+        <p>For the implementation, I primarily used Microsoft Power Platform applications, such as Power Apps, Power Automate, and SharePoint. The project was carried out with a strong focus on functionality and practicality, applying fundamental software concepts learned during my studies. A significant portion of the project time was spent learning new functionalities from various sources. Additionally, image editing and modeling software, as well as AI-based generation tools, were used in the project.</p>
+        <p>The objective of the implementation was to develop a system that would transmit customer orders directly from restaurant tables to the staff. The system is designed to first send orders to the kitchen for processing and then notify the appropriate party when the orders are ready. Customer terminals can only be used to place orders, the kitchen interface allows acknowledging orders as received for processing or as completed, and the cash register interface can only confirm that an order has been delivered.</p>
+        <p>The customer interface operates on a shopping cart principle. Product data and attributes are retrieved from a SharePoint table, and the contents of the shopping cart are stored as a variable named "cart" within Power Apps. When a customer confirms an order, the order details are stored in another SharePoint table. The shopping cart is then cleared, and the order is sent to the kitchen and cashier staff for processing.</p>
+        <p>The final outcome of the project was a relatively simple yet highly reliable and user-friendly ordering system suitable for small businesses. One funny detail that I noticed afterward was that the IKEA Bistro café had introduced an ordering system almost identical to mine, down to the graphical layout. This confirms that the system is also practical for real-world use.</p>
+        <a href="https://youtu.be/-t3D5I1EXHc" target="_blank"><button class="button-a">See Video</button></a>  
+        </div>
+        </div>
+
+        <!-------------------- Project section -------------------->
+        <div class="content-overlay-indiv-pro" id="bluewave-powerplatform">
+            <div class="carousel">
+            <div class="carousel-images">
+            <img src="images/bluewave_1000x560_1.png">
+            <img src="images/bluewave_1000x560_2.png">
+            <img src="images/bluewave_1000x560_3.png">
+            <img src="images/bluewave_1000x560_4.png">
+            <img src="images/bluewave_1000x560_5.png" class="active">
+            <img src="images/bluewave_1000x560_6.png">
+            <img src="images/bluewave_1000x560_7.png">
+            <img src="images/bluewave_1000x560_8.png">
+            <img src="images/bluewave_1000x560_9.jpg">
+            <img src="images/bluewave_1000x560_10.jpg">
+            </div>
+            <button class="carousel-button prevBtn">❮</button>
+            <button class="carousel-button nextBtn">❯</button>
+            </div>
+            <div class="indiv-project-divider">
+            </div>
+            <div class="tech-icons-pro">
+                <div class="tech-icon-content-pro" id="proj-date"><p>23.2.2024</p>
+                </div>
+                <div class="tech-icon-content-pro"><p>Platform & Languages:</p>
+                </div>
+                <div class="tech-icon-content-pro"><i class="devicon-windows11-original colored" title="Microsoft Power Platform" alt="Microsoft Power Platform"></i>
+                <p>Microsoft Power Platform</p></div>
+            </div>
+            <div class="indiv-project-divider">
+            </div>
+            <div class="indiv-project-textcontent">
+                <h4>Booking System - Power Platform</h4>
+                <p>This is the first practice project for the Taitotalo Low-Code System Developer course. In this project, I implemented a reservation system for an imaginary water sports equipment rental company for internal use. I used the Microsoft Power Platform for this project.</p>
+                <p>The user interface was implemented using Microsoft Power Apps, which used Sharepoint tables as data sources. The user interface had five views: home page, list of rental equipment, customer register page, reservation page, and reservation calendar. There were three Sharepoint tables: One for the database of rental equipment, one for the customer register, and one that acted as a database where reservations were stored.</p>
+                <p>The bookable vehicle and customer were selected from the register for the reservation. The delivery and return dates and the price of the device per hour were also saved in the reservation. A record of the reservation was made in the Sharepoint table, which triggered a Power Automate automation that sent an automated email and created an Outlook calendar entry for the reservation.</p>
+                <p>This exercise gave me a good background on what can be done with the Microsoft Power Platform. The project work was done as a teamwork during the Taitotalo training, where we followed the Scrum project management framework, which gave valuable experience in group work.</p>
+                <a href="https://youtu.be/sM4Ivb7euAM" target="_blank"><button class="button-a">See Video</button></a>
+                <!-- <div class="indiv-project-divider">
+                </div> -->
+            </div>
+        </div>
+
+        <div class="content-overlay-profile">
+            <div class="bottom-nav-buttons">
+                <a href="#projects-top"><button class="button-a">Back To Top</button></a>
+                <a href="index.html"><button class="button-a">Main Page</button></a>
+            </div>
+        </div>
+
+
+        <div class="footer-outer">
+            <div class="footer-container">
+                <div class="footer-divider">
+                </div>
+                <div class="footer-container-inner">  
+                <p> 
+                <a href="https://www.linkedin.com/in/nikonniittymaki/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/NNmaki" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/niko.niittymaki.1/" target="_blank"><i class="fa-brands fa-facebook"></i></a> 
+                </p>  
+                </div>      
+                <div class="footer-divider">    
+                </div>
+            </div>
+            <img src="images/nnlogo.png" alt="Niko Nmaki Logo" class="footer-logo">
+            <p class="copyright">Copyright © 2025 Niko Nmaki</p>
+        </div>
+
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
+
+

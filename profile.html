@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="nnmaki.com" />
+    <meta property="og:image" content="https://nnmaki.com/images/nnmakicom_og_1200x630.png">
+    <meta property="og:type" content="Portfolio Website" />
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:description" content="Niko Niittymäki - Web-developer | HTML | CSS | Javascript | PHP">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="images/favico.ico" type="image/x-icon">
+    <title>nnmaki.com</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+    
+    <body>
+        <header class="sticky-header">
+            <div class="header-logo">
+                <a href="index.html"><img src="images/nnlogo.png" title="Bact to main page" alt="Back to main page"></a>
+            </div>
+            <div class="burger-menu" onclick="toggleMenu()" role="button" aria-expanded="false" aria-label="Open menu">
+            ☰
+            </div>    
+        </header>
+    
+    <nav class="sidebar" id="sidebar" aria-label="Main Navigation">
+        <button class="close-btn" onclick="toggleMenu()">×</button>
+        <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="profile.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="background-profile background2">
+        
+        <div class="indiv-pro-header">
+            <div><h1>Profile</h1></div>
+            
+        </div>
+            
+        <div class="content-overlay-profile" id="profile-top">
+            <h3>Facts</h3>
+
+            <div class="top-content-profile">
+                <div class="profile-description">
+                    <p>A 46-year-old male. Hard-working, thrilled, and highly motivated ICT student and hobbyist. Interested in constantly learning new things. </p>
+                    <p>In spare time, enjoys outdoor activities like fishing and boating and also 3D printing and modeling, drones, and retrogame consoles.</p>
+                    <p>Has made a career in the retail sector in managerial positions. Skills in advertising, marketing, administrative tasks and leadership.</p>
+                    <p>Future goals in the ICT sector. Skilled in software and web development. Diligent in independent study through various online courses.</p>
+                </div>
+                <div class="profile-pic-profile">
+                    <img src="images/niko_uusi2.jpg">
+                </div>
+            </div>
+            <h3>Skills</h3>
+            <div class="top-content-profile">
+                <div>
+                    <p>Strengths in visuality, problem-solving skills, information retrieval skills, motivation and interaction skills.</p>
+                    <p>Familiar with the following technologies through practice, education or experience:</p>
+                </div>
+            </div>
+
+            <div class="tech-icons-profile">
+                <div class="tech-icon-content-profile"><i class="devicon-html5-plain colored" title="HTML" alt="HTML"></i>
+                <p>HTML</p></div>
+                <div class="tech-icon-content-profile"><i class="devicon-css3-plain-wordmark colored" title="CSS" alt="CSS"></i>
+                <p>CSS</p></div>
+                <div class="tech-icon-content-profile"><i class="devicon-javascript-plain colored" title="JavaScript" alt="JavaScript"></i>
+                <p>JavaScript</p></div>
+                <div class="tech-icon-content-profile"><i class="devicon-php-plain colored" title="PHP" alt="PHP"></i>
+                <p>PHP</p></div>
+                <div class="tech-icon-content-profile"><i class="devicon-python-plain colored" title="Python" alt="Python"></i>
+                <p>Python</p></div>
+                <div class="tech-icon-content-profile"><i class="devicon-git-plain colored" title="Git" alt="Git"></i>
+                <p>Git</p></div>
+                <div class="tech-icon-content-profile"><i class="devicon-azuresqldatabase-plain colored" title="SQL" alt="SQL"></i>
+                <p>SQL</p></div>
+                <div class="tech-icon-content-profile"><i class="devicon-react-original colored" title="React" alt="React"></i>
+                <p>React</p></div>
+                <div class="tech-icon-content-profile"><i class="devicon-vscode-plain colored" title="VS Code" alt="VS Code"></i>
+                <p>VSCode</p></div>
+                <div class="tech-icon-content-profile"><i class="devicon-woocommerce-plain colored" title="WooCommerce" alt="WooCommerce"></i>
+                <p>WooCommerce</p></div>
+                <div class="tech-icon-content-profile"><i class="devicon-wordpress-plain" title="WordPress" alt="WordPress"></i>
+                <p>WordPress</p></div>
+                <div class="tech-icon-content-profile"><i class="devicon-windows11-original colored" title="Microsoft" alt="Microsoft"></i>
+                <p>Microsoft</p></div>
+                <div class="tech-icon-content-profile"><i class="devicon-linux-plain" title="Linux" alt="Linux"></i>
+                <p>Linux</p></div>
+                <div class="tech-icon-content-profile"><i class="devicon-gimp-plain" title="Gimp" alt="Gimp"></i>
+                <p>Gimp</p></div>
+                <div class="tech-icon-content-profile"><i class="devicon-figma-plain colored" title="Figma" alt="Figma"></i>
+                <p>Figma</p></div>
+            </div>
+            
+            <h3>Hobbies</h3>
+
+            <div class="bottom-content-profile">
+                <div>
+                    <p>In addition to fishing and outdoor activities, enjoys Drones, 3D-Printing, and retrogame-consoles. The drones and flying wings are self-made and tuned, and equipped with cameras for FPV-flight. </p>
+                    <p>The 3D-printer has also been self-modified and calibrated, and modeling is done with Fusion and Sketchup-software.</p>
+                    <p>Retrogame-consoles are also a favorite hobby, and self-made ones include an Arcade-style console and a Handheld-gameconsole with 3D-printed case. Gameconsoles are Raspberry-based with Batocera and Retropie-firmware.</p>
+                </div>
+                <div class="profile-pic-hobbies-tn">
+                    <div class="image-wrapper-profile">
+                        <img src="images/hobbies_drone_tn.png">
+                        <div class="image-description-profile">Selfmade FPV-Drones & Planes</div>
+                    </div>
+                    <div class="image-wrapper-profile">
+                        <img src="images/hobbies_3d_tn.png">
+                        <div class="image-description-profile">3D Printing & Modeling</div>
+                    </div>
+                    <div class="image-wrapper-profile">
+                        <img src="images/hobbies_retrogame_tn.png">
+                        <div class="image-description-profile">Selfmade Retrogame Consoles</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-overlay-profile" id="contact">
+            <h3>Contact</h3>
+            <h6>Is there something on your mind? Something you'd like to talk about? </h6>
+          
+            <div class="content-overlay-profile-wrapper">
+                <div class="content-overlay-profile-inner">
+                    <div>
+                        <a href="mailto:niko@nnmaki.com"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                    
+                    <div>
+                        <a href="mailto:niko@nnmaki.com"><h5>niko@nnmaki.com</h5></a>
+                    </div>
+                </div>
+
+                <div class="content-overlay-profile-inner">
+                    <div>
+                        <a href="https://linkedin.com/in/nikonniittymaki" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>    
+                    <div>
+                        <a href="https://linkedin.com/in/nikonniittymaki" target="_blank"><h5>linkedin.com/in/nikonniittymaki</h5></a>
+                    </div>
+                </div>
+            </div>
+            <p>I think the best way to contact me is by email, but you can also write your thoughts to me using the form below so we can get to know each other better.</p>
+            <p>And what would be great, if you have a job offer for me or something like that, please feel free to contact me and I will send you a more detailed CV and a short video presentation of myself.</p>
+            <h6>Let's keep in touch!</h6>
+            <div class="form-section">
+            <form class="form-container" action="send-mail.php" method="post" >
+                <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" placeholder="Your Name" required tabindex="1">
+                </div>
+                
+                <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="text" name="email" placeholder="Email address" required tabindex="2">
+                </div>
+                
+                <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" name="subject" placeholder="Subject" required tabindex="3">
+                </div>
+
+                <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea name="message" placeholder="Your thoughts" required tabindex="4"></textarea>
+                </div>
+
+                <div class="form-group-captcha">
+                <div class="g-recaptcha" data-sitekey="6LcFLuIqAAAAABPlhb1gqtuk7EsZhCrEmEz5UuQy"></div>
+                </div>
+        
+                <div class="form-buttons">
+                <button id="sendform-sendbtn" type="submit" name="send"  class="button-a">Send</button>
+                <button id="sendform-clearbtn" type="reset" class="button-a">Clear</button>  
+                </div>
+            </form>    
+            </div>
+        <div class="indiv-project-divider">
+        </div>
+
+        <div class="bottom-nav-buttons">
+            <a href="#profile-top"><button class="button-a">Back To Top</button></a>
+            <a href="index.html"><button class="button-a">Main Page</button></a>
+        </div>
+    
+        </div>
+       
+        
+        <div class="footer-outer">
+            <div class="footer-container">
+                    <div class="footer-divider"></div>
+                    <div class="footer-container-inner">  
+                        <p> 
+                            <a href="https://www.linkedin.com/in/nikonniittymaki/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/NNmaki" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/niko.niittymaki.1/" target="_blank"><i class="fa-brands fa-facebook"></i></a> 
+                        </p>  
+                    </div>      
+                    <div class="footer-divider"></div>
+            </div>
+            <img src="images/nnlogo.png" alt="Niko Nmaki Logo" class="footer-logo">
+            <p class="copyright">Copyright © 2025 Niko Nmaki</p>
+        </div>
+    
+    </section>
+    <script src="script.js"></script>
+    </body>
+    </html>
+    
+    
+    
